@@ -48,10 +48,30 @@ main {
 h2 {
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(99, 91, 255)
+    /*color: rgb(25, 91, 255);*/
 }
 
 .menu {
     font-size: 20px;
     font-weight: bold;
+}
+
+
+.why-us .vs-card__text {
+    display: none;
+}
+
+.contact .vs-card, .a-card {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 0px;
+    cursor: pointer;
+    max-width: none;
+}
+
+.a-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0px;
+    transform: translate(0, 5px);
+        -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }

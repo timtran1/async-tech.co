@@ -10,7 +10,7 @@
       <h1 class="mt-0 mb-3">Making Software A Reality</h1>
       <h2 class="mt-3">Discover possibilities with technology and uncover your future.</h2>
       <div class="w-25 d-flex justify-content-center" style="margin: auto">
-        <vs-button block square danger size="xl"><b style="  font-size: 24px;">Hire us!</b></vs-button>
+        <vs-button block square size="xl"><b style="font-size: 24px;">Hire us!</b></vs-button>
       </div>
     </div>
 
@@ -37,16 +37,16 @@
           <div class="d-flex justify-content-between mb-5">
             <WhyUSCard img="code.jpg"/>
             <div class="text-left p-5" style="font-size: 20px">
-              <h3> Technical expertise</h3>
+              <h3>Technical expertise</h3>
               <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
                 standard.
               </div>
             </div>
           </div>
 
-          <div class="d-flex justify-content-between mt-5 pt-5">
+          <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
             <div class="text-left p-5" style="font-size: 20px">
-              <h3> Personal approach</h3>
+              <h3>Personal approach</h3>
               <div>We apply a customer oriented approach, with a goal of advancing your business interest. We take care
                 to peel away assumptions, and deliver hard-hitting solutions that accurately solve your business
                 problem.
@@ -54,9 +54,83 @@
             </div>
             <WhyUSCard img="code.jpg"/>
           </div>
+
+          <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
+            <WhyUSCard img="code.jpg"/>
+            <div class="text-left p-5" style="font-size: 20px">
+              <h3>Long-term relationship</h3>
+              <div>We aim to build long-term working relationships with all of our clients. We believe that by doing so,
+                our mutual knowledge and understanding can compound into remarkable results.
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="process w-100 pt-5 pb-5">
+          <h2>Software Development Process</h2>
+          <Process/>
+        </div>
 
+        <div class="contact w-100 pt-5 pb-5" style="background-color: #2c3e50">
+          <h2 class="text-white">Tell us about your project</h2>
+
+          <div class="w-100 d-flex justify-content-center">
+            <vs-card>
+              <template #text>
+                <form class="p-5">
+                  <div class="d-flex justify-content-center pb-2">
+
+                    <div class="d-flex flex-column align-items-start">
+                      <b>Your name</b>
+                      <vs-input  class="mt-1" required/>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-start ml-2">
+                      <b>Email</b>
+                      <vs-input type="email" class="mt-1" required/>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-start ml-2">
+                      <b>Budget</b>
+                      <vs-select class="mt-1" v-model="budget">
+                        <vs-option label="$0 - $1,000" value="1k">
+                          $0 - $1,000
+                        </vs-option>
+                        <vs-option label="$1,000 - $5,000" value="1k-5k">
+                          $1,000 - $5,000
+                        </vs-option>
+                        <vs-option label="Javascript" value="5k-25k">
+                          $5,000 - $25,000
+                        </vs-option>
+                        <vs-option disabled label="Sass" value="25k-100k">
+                          $25,000 - $100,000
+                        </vs-option>
+                        <vs-option label="Typescript" value="100k">
+                          $100,000+
+                        </vs-option>
+                      </vs-select>
+                    </div>
+
+
+                  </div>
+                  <div class="d-flex flex-column align-items-start pb-2">
+                    <b>Message</b>
+                    <textarea
+                        style="border-radius: 20px; padding:5px; background-color: rgb(244, 247, 248);    border: 2px solid transparent;color: rgb(44, 62, 80)"
+                        class="w-100 mt-1" rows="10"></textarea>
+                  </div>
+
+                  <div class="d-flex justify-content-center pb-2">
+                    <vs-button type="submit" flat block>Send</vs-button>
+                  </div>
+
+                </form>
+              </template>
+            </vs-card>
+
+          </div>
+
+        </div>
       </div>
     </main>
 
@@ -69,6 +143,7 @@ import WhyUSCard from "@/components/WhyUSCard";
 import ServiceCard from "@/components/ServiceCard";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Process from "@/components/Process";
 import '../assets/css/Home.css'
 
 export default {
@@ -77,7 +152,13 @@ export default {
     ServiceCard,
     WhyUSCard,
     NavBar,
+    Process,
     Footer
+  },
+  data() {
+    return {
+      budget: ''
+    }
   }
 }
 </script>

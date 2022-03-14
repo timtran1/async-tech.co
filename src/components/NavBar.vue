@@ -31,10 +31,10 @@ export default {
       let scroll = Math.abs(document.body.getBoundingClientRect().top)
 
       if (scroll > window.innerHeight) {
-        console.log('scrolled')
+        // console.log('scrolled')
         if (!this.scrolled) this.scrolled = true
       } else {
-        console.log('unscrolled')
+        // console.log('unscrolled')
         if (this.scrolled) this.scrolled = false
       }
     });
