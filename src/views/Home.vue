@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <main class="d-flex flex-column align-items-center">
+    <main class="d-flex flex-column align-items-center pb-5">
       <div class="wrapper">
 
         <div class="services">
@@ -66,15 +66,15 @@
           </div>
         </div>
 
-        <div class="process w-100 pt-5 pb-5">
+        <div id="process" class="process w-100 pt-5 pb-5">
           <h2>Software Development Process</h2>
           <Process/>
         </div>
 
-        <div class="contact w-100 pt-5 pb-5" style="background-color: #2c3e50">
+        <div id="contact" class="contact w-100 pt-5 pb-5" style="background-color: #2c3e50">
           <h2 class="text-white">Tell us about your project</h2>
 
-          <div class="w-100 d-flex justify-content-center">
+          <div class="w-100 d-flex justify-content-center pb-5">
             <vs-card>
               <template #text>
                 <form class="p-5">
