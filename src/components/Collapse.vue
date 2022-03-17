@@ -1,20 +1,18 @@
 <template>
   <div class="wrap-collabsible">
-    <input id="collapsible" class="toggle" type="checkbox">
-    <label for="collapsible" class="lbl-toggle">
+    <input :id="id" class="toggle" type="checkbox">
+    <label :for="id" class="lbl-toggle">
       <slot name="title">More Info</slot>
     </label>
     <div class="collapsible-content">
       <div class="content-inner">
-        <p>
-          <slot name="content">
-            QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could
-            also used with
-            its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular
-            browsers without
-            plug-ins. Test-Driven Development.
-          </slot>
-        </p>
+        <slot name="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </slot>
       </div>
     </div>
   </div>
@@ -25,9 +23,13 @@ export default {
   name: "Collapse",
   data() {
     return {
-      isOpen: false
+      isOpen: false,
+      id: null
     }
   },
+  mounted() {
+    this.id = this._uid
+  }
 }
 </script>
 
@@ -39,7 +41,7 @@ export default {
 
 label {
   text-align: left;
-  margin-bottom: 1rem;
+
 }
 
 input[type='checkbox'] {
@@ -78,14 +80,17 @@ input[type='checkbox'] {
   transform: rotate(90deg) translateX(-3px);
 }
 
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+  /*margin-top: 1rem;*/
+}
+
 .collapsible-content {
   max-height: 0px;
   overflow: hidden;
   transition: max-height .25s ease-in-out;
-}
+  margin-bottom: 1rem;
 
-.toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 100vh;
 }
 
 .collapsible-content .content-inner {

@@ -15,7 +15,7 @@
 
       <div class="w-50 d-flex flex-column align-items-start">
         <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="/"><b>Home</b></a></div>
-        <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="#process"><b>How we work</b></a></div>
+        <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="/#process"><b>How we work</b></a></div>
         <div class="mb-2"><i class='bx bx-chevron-right'></i>
           <router-link to="faq"><b>FAQ</b></router-link>
         </div>
