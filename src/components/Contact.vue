@@ -11,17 +11,17 @@
 
               <div class="d-flex flex-column align-items-start">
                 <b>Your name</b>
-                <vs-input name="name" class="mt-1" required/>
+                <vs-input name="name" class="mt-1" v-model="form.name" required/>
               </div>
 
               <div class="d-flex flex-column align-items-start ml-2">
                 <b>Email</b>
-                <vs-input name="email" type="email" class="mt-1" required/>
+                <vs-input name="email" v-model="form.email" type="email" class="mt-1" required/>
               </div>
 
               <div class="d-flex flex-column align-items-start ml-2">
                 <b>Budget</b>
-                <vs-select class="mt-1" name="budget" required>
+                <vs-select class="mt-1" v-model="form.budget" name="budget" required>
                   <vs-option label="$0 - $1,000" value="1k">
                     $0 - $1,000
                   </vs-option>
@@ -69,6 +69,16 @@
 <script>
 export default {
   name: "Contact",
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        budget: '',
+        message: ''
+      }
+    }
+  },
 }
 </script>
 
