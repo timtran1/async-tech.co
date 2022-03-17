@@ -5,7 +5,7 @@
           <div class="w-100 d-flex justify-content-center pb-5">
             <vs-card>
               <template #text>
-                <form class="p-5" @submit="submit">
+                <form class="p-5" name="contact" method="POST" data-netlify="true">
                   <div class="d-flex justify-content-center pb-2">
 
                     <div class="d-flex flex-column align-items-start">
