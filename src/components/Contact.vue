@@ -21,7 +21,7 @@
 
               <div class="d-flex flex-column align-items-start ml-2">
                 <b>Budget</b>
-                <vs-select class="mt-1" v-model="budget" name="budget" required>
+                <vs-select class="mt-1" name="budget" required>
                   <vs-option label="$0 - $1,000" value="1k">
                     $0 - $1,000
                   </vs-option>
@@ -69,17 +69,6 @@
 <script>
 export default {
   name: "Contact",
-  data() {
-    return {
-      budget: ''
-    }
-  },
-  methods: {
-    submit(e) {
-      e.preventDefault()
-      console.log('submit')
-    }
-  }
 }
 </script>
 
