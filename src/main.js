@@ -5,6 +5,7 @@ import router from './router'
 import 'bootstrap-utilities/bootstrap-utilities.css'
 import 'boxicons/css/boxicons.min.css'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
+import './assets/css/All.css'
 
 Vue.use(Vuesax, {
 })

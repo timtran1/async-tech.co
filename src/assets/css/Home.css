@@ -34,17 +34,6 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-main {
-    background-color: white;
-    /*margin-top: 50vh;*/
-    padding: 10px;
-    position: relative;
-}
-
-.wrapper {
-    max-width: 1200px;
-}
-
 h2 {
     font-size: 3rem;
     font-weight: bold;

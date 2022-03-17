@@ -11,7 +11,7 @@
           <router-link to="/faq">FAQ</router-link>
         </div>
         <div class="ml-5">
-          <vs-button size="xl" :dark="!scrolled"><a href="#contact"><b>Contact us</b></a></vs-button>
+          <vs-button size="xl" :dark="!scrolled" @click="contact"><a href="#"><b>Contact us</b></a></vs-button>
         </div>
       </div>
     </div>
@@ -19,8 +19,18 @@
 </template>
 
 <script>
+import scroll from "@/components/scroll";
+
+
+function debounce(method, delay) {
+  clearTimeout(method._tId);
+  method._tId = setTimeout(method, delay);
+}
+
+
 export default {
   name: "NavBar",
+  mixins: [scroll],
   data() {
     return {
       scrolled: false
@@ -28,15 +38,17 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', () => {
-      let scroll = Math.abs(document.body.getBoundingClientRect().top)
+      debounce(() => {
+        let scroll = Math.abs(document.body.getBoundingClientRect().top)
 
-      if (scroll > window.innerHeight) {
-        // console.log('scrolled')
-        if (!this.scrolled) this.scrolled = true
-      } else {
-        // console.log('unscrolled')
-        if (this.scrolled) this.scrolled = false
-      }
+        if (scroll > window.innerHeight) {
+          // console.log('scrolled')
+          if (!this.scrolled) this.scrolled = true
+        } else {
+          // console.log('unscrolled')
+          if (this.scrolled) this.scrolled = false
+        }
+      }, 500)
     });
   },
 }
@@ -61,6 +73,6 @@ a {
 }
 
 .dark {
-background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 </style>

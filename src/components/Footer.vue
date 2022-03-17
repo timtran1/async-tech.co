@@ -16,8 +16,10 @@
       <div class="w-50 d-flex flex-column align-items-start">
         <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="/"><b>Home</b></a></div>
         <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="#process"><b>How we work</b></a></div>
-        <div class="mb-2"><i class='bx bx-chevron-right'></i><router-link to="faq"><b>FAQ</b></router-link></div>
-        <div class="mb-2"><i class='bx bx-chevron-right'></i><a href="#contact"><b>Contact us</b></a></div>
+        <div class="mb-2"><i class='bx bx-chevron-right'></i>
+          <router-link to="faq"><b>FAQ</b></router-link>
+        </div>
+        <div class="mb-2" @click="contact"><i class='bx bx-chevron-right'></i><a href="#"><b>Contact us</b></a></div>
       </div>
     </div>
 
@@ -29,8 +31,11 @@
 </template>
 
 <script>
+import scroll from "@/components/scroll";
+
 export default {
-  name: "Footer"
+  name: "Footer",
+  mixins: [scroll],
 }
 </script>
 

@@ -10,7 +10,7 @@
       <h1 class="mt-0 mb-3">Making Software A Reality</h1>
       <h2 class="mt-3">Discover possibilities with technology and uncover your future.</h2>
       <div class="w-25 d-flex justify-content-center" style="margin: auto">
-        <vs-button block square size="xl"><b style="font-size: 24px;">Hire us!</b></vs-button>
+        <vs-button block square size="xl" @click="contact"><b style="font-size: 24px;">Hire us!</b></vs-button>
       </div>
     </div>
 
@@ -82,7 +82,7 @@
 
                     <div class="d-flex flex-column align-items-start">
                       <b>Your name</b>
-                      <vs-input  class="mt-1" required/>
+                      <vs-input class="mt-1" required/>
                     </div>
 
                     <div class="d-flex flex-column align-items-start ml-2">
@@ -144,16 +144,23 @@ import ServiceCard from "@/components/ServiceCard";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Process from "@/components/Process";
+import scroll from "@/components/scroll";
 import '../assets/css/Home.css'
 
 export default {
   name: 'Home',
+  mixins: [scroll],
   components: {
     ServiceCard,
     WhyUSCard,
     NavBar,
     Process,
     Footer
+  },
+  mounted() {
+    if (this.$route.hash === '#contact') {
+      this.contact()
+    }
   },
   data() {
     return {

@@ -1,0 +1,11 @@
+main {
+    background-color: white;
+    /*margin-top: 50vh;*/
+    padding: 10px;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
