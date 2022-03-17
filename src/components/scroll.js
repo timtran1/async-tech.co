@@ -26,7 +26,7 @@ export default {
         contact() {
             const el = document.getElementById('contact');
             if (el) el.scrollIntoView({behavior: 'smooth'});
-            else this.$route.push('/#contact');
+            else this.$router.push('/#contact');
         }
     }
 }

@@ -103,7 +103,7 @@
       </div>
     </main>
 
-    <Footer></Footer>
+    <Footer/>
   </div>
 </template>
 

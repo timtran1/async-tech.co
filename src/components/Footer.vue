@@ -20,6 +20,9 @@
         <div class="mb-2"><i class='bx bx-chevron-right'></i>
           <router-link to="/"><b>Home</b></router-link>
         </div>
+        <div class="mb-2"><i class='bx bx-chevron-right'></i>
+          <router-link to="projects"><b>Projects</b></router-link>
+        </div>
         <div class="mb-2" @click="scroll">
           <router-link to="/#process"><i class='bx bx-chevron-right'></i>How we work</router-link>
         </div>

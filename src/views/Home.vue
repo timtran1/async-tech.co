@@ -10,7 +10,7 @@
       <h1 class="mt-0 mb-3">Making Software A Reality</h1>
       <h2 class="mt-3">Discover possibilities with technology and uncover your future.</h2>
       <div class="w-25 d-flex justify-content-center" style="margin: auto">
-        <vs-button block square size="xl" @click="scroll"><a href="#contact"><b style="font-size: 24px;">Hire us!</b></a></vs-button>
+        <vs-button block square size="xl" @click="contact"><b style="font-size: 24px;">Hire us!</b></vs-button>
       </div>
     </div>
 
