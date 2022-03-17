@@ -20,7 +20,7 @@
 
                     <div class="d-flex flex-column align-items-start ml-2">
                       <b>Budget</b>
-                      <vs-select class="mt-1" v-model="budget" name="budget">
+                      <vs-select class="mt-1" v-model="budget" name="budget" required>
                         <vs-option label="$0 - $1,000" value="1k">
                           $0 - $1,000
                         </vs-option>
