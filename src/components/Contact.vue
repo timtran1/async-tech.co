@@ -24,13 +24,13 @@
                         <vs-option label="$0 - $1,000" value="1k">
                           $0 - $1,000
                         </vs-option>
-                        <vs-option label="$1,000 - $5,000" value="1k-5k">
+                        <vs-option label="$1,000 - $5,000" value="1kto5k">
                           $1,000 - $5,000
                         </vs-option>
-                        <vs-option label="$5,000 - $25,000" value="5k-25k">
+                        <vs-option label="$5,000 - $25,000" value="5kto25k">
                           $5,000 - $25,000
                         </vs-option>
-                        <vs-option label="$25,000 - $100,000" value="25k-100k">
+                        <vs-option label="$25,000 - $100,000" value="25kto100k">
                           $25,000 - $100,000
                         </vs-option>
                         <vs-option label="$100,000+" value="100k">
