@@ -1,14 +1,32 @@
 export default {
     name: 'scroll',
+    data() {
+        return {
+            home: false
+        };
+    },
+    mounted() {
+        if (this.$route.path === "/") {
+            this.home = true;
+        }
+
+        if (this.$route.hash) {
+            const el = document.getElementById(this.$route.hash.substring(1))
+            if (el) el.scrollIntoView({behavior: 'smooth'})
+        }
+    },
     methods: {
-        contact(e = null) {
-            const contact = document.getElementById('contact')
-            if (contact) {
+        scroll(e = null) {
+            const el = document.getElementById(e.target.hash.substring(1))
+            if (el) {
                 if (e) e.preventDefault();
-                document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-            } else {
-                window.location.href = '/#contact';
+                el.scrollIntoView({behavior: 'smooth'});
             }
+        },
+        contact() {
+            const el = document.getElementById('contact');
+            if (el) el.scrollIntoView({behavior: 'smooth'});
+            else this.$route.push('/#contact');
         }
     }
 }

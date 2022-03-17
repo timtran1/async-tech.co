@@ -4,8 +4,8 @@
 
     <img src="2616075.jpg" alt="" class="w-100">
     <main class="main p-2 ps-5 pe-5">
-      <div class="wrapper">
-        <h1 class="mt-3 mb-3">FAQ</h1>
+      <div class="wrapper pt-5">
+        <h1 class="mt-5 mb-3">FAQ</h1>
 
         <Collapse>
           <template v-slot:title>Who is Async?</template>
@@ -129,5 +129,9 @@ export default {
 </script>
 
 <style scoped>
-
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 </style>

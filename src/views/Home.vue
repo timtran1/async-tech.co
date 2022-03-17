@@ -10,7 +10,7 @@
       <h1 class="mt-0 mb-3">Making Software A Reality</h1>
       <h2 class="mt-3">Discover possibilities with technology and uncover your future.</h2>
       <div class="w-25 d-flex justify-content-center" style="margin: auto">
-        <vs-button block square size="xl" @click="contact"><b style="font-size: 24px;">Hire us!</b></vs-button>
+        <vs-button block square size="xl" @click="scroll"><a href="#contact"><b style="font-size: 24px;">Hire us!</b></a></vs-button>
       </div>
     </div>
 
@@ -35,7 +35,7 @@
           <h2>Why us</h2>
 
           <div class="d-flex justify-content-between mb-5">
-            <WhyUSCard img="code.jpg"/>
+            <WhyUSCard img="code.jpeg"/>
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Technical expertise</h3>
               <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
@@ -52,11 +52,11 @@
                 problem.
               </div>
             </div>
-            <WhyUSCard img="code.jpg"/>
+            <WhyUSCard img="personal.jpeg"/>
           </div>
 
           <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
-            <WhyUSCard img="code.jpg"/>
+            <WhyUSCard img="relationship.jpeg"/>
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Long-term relationship</h3>
               <div>We aim to build long-term working relationships with all of our clients. We believe that by doing so,
@@ -99,11 +99,6 @@ export default {
     Process,
     Contact,
     Footer
-  },
-  mounted() {
-    if (this.$route.hash === '#contact') {
-      this.contact()
-    }
   },
   data() {
     return {

@@ -4,7 +4,7 @@
 <!--      <h3>Pot with a plant</h3>-->
     </template>
     <template #img>
-      <img :src="require(`@/assets/img/${$props.img}`)">
+      <img :src="require(`@/assets/img/${$props.img}`)" :alt="img">
     </template>
     <template #text>
       <p>

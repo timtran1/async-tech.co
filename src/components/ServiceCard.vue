@@ -4,7 +4,7 @@
       <h3>{{ $props.title }}</h3>
     </template>
     <template #img>
-      <img :src="require(`@/assets/img/${$props.img}`)" height="240" width="350">
+      <img :src="require(`@/assets/img/${$props.img}`)" height="240" width="350" :alt="img">
     </template>
     <template #text>
       <p>
