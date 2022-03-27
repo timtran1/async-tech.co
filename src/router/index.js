@@ -21,8 +21,13 @@ const routes = [
     },
     {
         path: '/sharknews',
-        name: 'Cruise',
+        name: 'SharkNews',
         component: () => import( '../views/SharkNews.vue')
+    },
+    {
+        path: '/deepsel-ecommerce',
+        name: 'Deepsel',
+        component: () => import( '../views/Deepsel.vue')
     },
 
 ]

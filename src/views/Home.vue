@@ -70,20 +70,19 @@
           <h2>Our projects</h2>
           <div class="d-flex flex-wrap justify-content-center">
             <ProjectCard
+                img="ecom.jpeg"
+                title="Deepsel"
+                text="E-commerce platform for growth"
+                href="/deepsel-ecommerce"
+                color="rgb(235, 47, 91)"
+            />
+            <ProjectCard
                 img="team-work.jpg"
                 title="Cruise"
                 text="Contract and project management made easy"
                 href="/cruise"
                 color="rgb(25, 91, 255)"
             />
-            <ProjectCard
-                img="ecom.jpeg"
-                title="Deepsel"
-                text="E-commerce platform for growth"
-                href="/deepsel-ecom"
-                color="rgb(235, 47, 91)"
-            />
-
             <ProjectCard
                 img="build.jpeg"
                 title="Zest"
@@ -148,56 +147,56 @@ export default {
 <style scoped>
 
 #banner-img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .banner h1 {
-    font-size: 5rem;
-    /*margin-top: 22vh;*/
-    color: white;
-    font-weight: bold;
-    text-align: center;
+  font-size: 5rem;
+  /*margin-top: 22vh;*/
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 .banner h2 {
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 .banner {
-    height: 100vh;
-    padding-top: 32vh;
-    background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  padding-top: 32vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    /*color: rgb(25, 91, 255);*/
+  font-size: 3rem;
+  font-weight: bold;
+  /*color: rgb(25, 91, 255);*/
 }
 
 .why-us .vs-card__text {
-    display: none;
+  display: none;
 }
 
 
 .a-card:hover {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0px;
-    transform: translate(0, 5px);
-        -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0px;
+  transform: translate(0, 5px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 </style>
