@@ -10,8 +10,8 @@
         <div class="ml-5">
           <router-link to="/">Home</router-link>
         </div>
-        <div class="ml-5">
-          <router-link to="/projects">Projects</router-link>
+        <div class="ml-5" @click="scroll">
+          <router-link to="/#projects">Projects</router-link>
         </div>
         <div class="ml-5" @click="scroll">
           <router-link to="/#process">How we work</router-link>

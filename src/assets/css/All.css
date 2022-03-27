@@ -9,3 +9,7 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+
+:root {
+    --color-primary: rgb(25, 91, 255);
+}

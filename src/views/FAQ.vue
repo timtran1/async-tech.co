@@ -2,28 +2,27 @@
   <div>
     <NavBar/>
 
-    <img src="2616075.jpg" alt="" class="w-100">
     <main class="main p-2 ps-5 pe-5">
       <div class="wrapper pt-5">
         <h1 class="mt-5 mb-3">FAQ</h1>
 
         <Collapse>
-          <template v-slot:title>Who is Async?</template>
+          <template v-slot:title>What is Async?</template>
           <template v-slot:content>
-            Async was founded in 2019 by Tim Tran - a software engineer in Hanoi, whose mission was to tap and grow
+            Async was founded in 2019 in Hanoi - Vietnam, with a mission to tap and grow
             the next generation of software
             developers and deliver excellence in software products. Initially building custom software for ecommerce
             businesses in Vietnam, Async discovered the growing need, as well as the shortage and high costs, of
             software engineering in developed
-            countries. Tim sought to connect these needs with the growing pool of highly
+            countries. We sought to connect these needs with the growing pool of highly
             skilled technical talents in Vietnam.
           </template>
         </Collapse>
 
         <Collapse>
-          <template v-slot:title>Are you an American company?</template>
+          <template v-slot:title>Are you a US company?</template>
           <template v-slot:content>
-            Yes, Async Inc. is an American corporation incorporated in Delaware. Our primary development team is
+            Yes, Async Inc. is an US corporation incorporated in Delaware. Our primary development team is
             located in
             Hanoi, Vietnam.
           </template>
@@ -32,9 +31,8 @@
         <Collapse>
           <template v-slot:title>How will I communicate with the team?</template>
           <template v-slot:content>
-            Our standard mode of communication is email or Slack, but you are free to choose the platform you want to
-            talk on. You can also schedule video calls with our team, regardless of timezone differences, which we
-            will accommodate.
+            We expect to have regular text and face-to-face communications throughout the project, with much
+            flexibility on the platform, such as Slack, emails, Zoom, etc.
           </template>
         </Collapse>
 
@@ -46,7 +44,7 @@
 
             If billing by the hour, we invoice weekly. Payment is due within 3 business days.
 
-            All payments are invoiced in US dollars through Stripe, a trusted American payment processor.
+            All payments are invoiced in US dollars through Stripe, a trusted US payment processor.
           </template>
         </Collapse>
 
@@ -55,7 +53,7 @@
           <template v-slot:content>
             We can not sign an NDA before we have an initial description of your project and a budget figure to work
             with.
-            We need to know if the requirements and client's expectations are a good fit to work with Async, and an
+            We need to know if the requirements and budget are a suitable fit to move forward, and an
             NDA
             can only
             be signed if it's a mutual agreement.
@@ -76,7 +74,7 @@
             This can only be answered after the requirements collection process. After learning about the problem you're
             trying to solve, your budget, users, market, ...etc.
             we can then propose a solution that solves the problem while staying in your budget. This is
-            the software consulting part of the project, and we give 4 free consulting hours per project. The result
+            the software consulting part of the project, and we give 2 free consulting hours per project. The result
             will be
             a proposal with a cost estimation.
           </template>
@@ -85,7 +83,7 @@
         <Collapse>
           <template v-slot:title>Will you host my project after completion?</template>
           <template v-slot:content>
-            Yes, we sure can. We can manage cloud servers all over the world through AWS, Google Cloud etc., ask us
+            Yes, we sure can. We can manage cloud servers globally through AWS, Google Cloud etc., ask us
             about our hosting packages.
           </template>
         </Collapse>

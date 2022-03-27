@@ -1,0 +1,84 @@
+<template>
+  <div
+      @click="$router.history.push(href)"
+      class="wrap img-card mb-5 p-4 d-flex flex-column align-items-center"
+      :style="{'background-image': `url(${require('@/assets/img/team-work.jpg')})`,
+        'background-size': 'cover',
+      'background-repeat':'no-repeat',
+'background-position': 'center center'}"
+  >
+
+    <div class="d-flex flex-column info w-100 p-2">
+      <h3 class=" m-0 m-2" :style="{color}">{{ title }}</h3>
+      <p class="m-0 m-2">{{ text }}</p>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center mb-4">
+      <div class="img-card img m-2" v-for="im in imgs" :key="im">
+        <img :src="require(`@/assets/img/${im}`)" :alt="im">
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ProjectCard",
+  props: {
+    title: String,
+    img: String,
+    text: String,
+    href: String,
+    color: String,
+  },
+  computed: {
+    imgs() {
+      return this.img.split(",");
+    }
+  }
+}
+</script>
+
+<style scoped>
+h3 {
+  font-size: 2rem;
+}
+
+.info {
+  max-width: 300px;
+}
+
+.wrap {
+  /*background-color: rgb(246, 248, 250);*/
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-card {
+  border: 1px solid rgba(26, 92, 255, 0.15);
+  /*box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, var(--vs-shadow-opacity));*/
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+
+.img {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, var(--vs-shadow-opacity));
+  max-width: 350px;
+
+}
+
+
+.img-card:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transform: translate(0, 5px);
+}
+</style>

@@ -71,6 +71,39 @@
           <Process/>
         </div>
 
+        <div id="projects" class="projects w-100 pt-5 pb-5">
+          <h2>Our projects</h2>
+          <ProjectCard
+              img="cr-msg.png,cr-milestone.png,cr-req.png"
+              title="Cruise"
+              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+              href="/cruise"
+              color="rgb(25, 91, 255)"
+          />
+          <ProjectCard
+              img="cr-msg.png,cr-milestone.png,cr-req.png"
+              title="Deepsel"
+              text="E-commerce platform for growth"
+              href="/deepsel-ecom"
+              color="rgb(235, 47, 91)"
+          />
+
+          <ProjectCard
+              img="cr-msg.png,cr-milestone.png,cr-req.png"
+              title="Zest"
+              text="Build websites without coding"
+              href="/zest"
+              color="rgb(66, 184, 131)"
+          />
+          <ProjectCard
+              img="cr-msg.png,cr-milestone.png,cr-req.png"
+              title="SharkNews"
+              text="Offbeat news app with data-driven feed"
+              href="/sharknews"
+              color="rgb(82, 96, 255)"
+          />
+        </div>
+
         <Contact/>
       </div>
     </main>
@@ -87,12 +120,14 @@ import Footer from "@/components/Footer";
 import Process from "@/components/Process";
 import scroll from "@/components/scroll";
 import Contact from "@/components/Contact";
+import ProjectCard from "@/components/ProjectCard";
 import '../assets/css/Home.css'
 
 export default {
   name: 'Home',
   mixins: [scroll],
   components: {
+    ProjectCard,
     ServiceCard,
     WhyUSCard,
     NavBar,

@@ -1,5 +1,5 @@
 <template>
-  <footer class="d-flex justify-content-center flex-wrap pt-4">
+  <footer class="d-flex justify-content-center flex-wrap pt-4 pl-2">
     <div class="w-100 theme pb-4 pt-4 d-flex justify-content-start" style="font-size: 2rem; max-width: 1200px;"><b>
       <router-link
           to="/">Async
@@ -11,7 +11,7 @@
         <div class="mb-2"><i class='bx bxs-home mr-1'></i>2261 Market Street #4441</div>
         <div class="mb-2"><i class='bx bxs-buildings mr-1'></i>San Francisco CA, 94114</div>
         <div class="mb-2"><i class='bx bxs-envelope mr-1'></i><a
-            href="mailto:tim@async-tech.com">contact@async-tech.com</a>
+            href="mailto:contact@async-tech.com">contact@async-tech.com</a>
         </div>
         <div class="mb-2"><i class='bx bxs-phone mr-1'></i>+1 (415) 655 1009</div>
       </div>
@@ -20,8 +20,8 @@
         <div class="mb-2"><i class='bx bx-chevron-right'></i>
           <router-link to="/"><b>Home</b></router-link>
         </div>
-        <div class="mb-2"><i class='bx bx-chevron-right'></i>
-          <router-link to="projects"><b>Projects</b></router-link>
+        <div class="mb-2" @click="scroll">
+          <router-link to="/#projects"><i class='bx bx-chevron-right'></i>Projects</router-link>
         </div>
         <div class="mb-2" @click="scroll">
           <router-link to="/#process"><i class='bx bx-chevron-right'></i>How we work</router-link>
