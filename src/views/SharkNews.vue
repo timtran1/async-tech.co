@@ -55,7 +55,6 @@
 <script>
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import '../assets/css/All.css'
 
 export default {
   name: "SharkNews",

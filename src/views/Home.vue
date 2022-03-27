@@ -3,7 +3,7 @@
 
     <NavBar/>
 
-    <img id="background-video" src="../assets/img/banner.jpg" alt="" class="w-100">
+    <img id="banner-img" src="../assets/img/banner.jpg" alt="" class="w-100">
 
     <div class="banner">
       <!--        <h1>MAKING SOFTWARE A REALITY.</h1>-->
@@ -66,43 +66,46 @@
           </div>
         </div>
 
+        <div id="projects" class="projects w-100 pt-5 pb-5">
+          <h2>Our projects</h2>
+          <div class="d-flex flex-wrap justify-content-center">
+            <ProjectCard
+                img="team-work.jpg"
+                title="Cruise"
+                text="Contract and project management made easy"
+                href="/cruise"
+                color="rgb(25, 91, 255)"
+            />
+            <ProjectCard
+                img="ecom.jpeg"
+                title="Deepsel"
+                text="E-commerce platform for growth"
+                href="/deepsel-ecom"
+                color="rgb(235, 47, 91)"
+            />
+
+            <ProjectCard
+                img="build.jpeg"
+                title="Zest"
+                text="Build websites without coding"
+                href="/zest"
+                color="rgb(66, 184, 131)"
+            />
+            <ProjectCard
+                img="sharknews.jpeg"
+                title="SharkNews"
+                text="Data-driven news app"
+                href="/sharknews"
+                color="rgb(82, 96, 255)"
+            />
+          </div>
+        </div>
+
         <div id="process" class="process w-100 pt-5 pb-5">
           <h2>Software Development Process</h2>
           <Process/>
         </div>
 
-        <div id="projects" class="projects w-100 pt-5 pb-5">
-          <h2>Our projects</h2>
-          <ProjectCard
-              img="cr-msg.png,cr-milestone.png,cr-req.png"
-              title="Cruise"
-              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-              href="/cruise"
-              color="rgb(25, 91, 255)"
-          />
-          <ProjectCard
-              img="cr-msg.png,cr-milestone.png,cr-req.png"
-              title="Deepsel"
-              text="E-commerce platform for growth"
-              href="/deepsel-ecom"
-              color="rgb(235, 47, 91)"
-          />
-
-          <ProjectCard
-              img="cr-msg.png,cr-milestone.png,cr-req.png"
-              title="Zest"
-              text="Build websites without coding"
-              href="/zest"
-              color="rgb(66, 184, 131)"
-          />
-          <ProjectCard
-              img="cr-msg.png,cr-milestone.png,cr-req.png"
-              title="SharkNews"
-              text="Offbeat news app with data-driven feed"
-              href="/sharknews"
-              color="rgb(82, 96, 255)"
-          />
-        </div>
 
         <Contact/>
       </div>
@@ -121,7 +124,6 @@ import Process from "@/components/Process";
 import scroll from "@/components/scroll";
 import Contact from "@/components/Contact";
 import ProjectCard from "@/components/ProjectCard";
-import '../assets/css/Home.css'
 
 export default {
   name: 'Home',
@@ -142,3 +144,60 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+#banner-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.banner h1 {
+    font-size: 5rem;
+    /*margin-top: 22vh;*/
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner {
+    height: 100vh;
+    padding-top: 32vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    /*color: rgb(25, 91, 255);*/
+}
+
+.why-us .vs-card__text {
+    display: none;
+}
+
+
+.a-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0px;
+    transform: translate(0, 5px);
+        -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+</style>

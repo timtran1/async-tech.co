@@ -59,12 +59,12 @@ footer {
 }
 
 .theme {
-  color: rgb(25, 91, 255);
+  color: var(--color-primary);
 }
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 238);
+  color: var(--color-primary);
   cursor: pointer;
 }
 
