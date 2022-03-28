@@ -23,9 +23,9 @@
             <div class="w-100 d-flex flex-wrap justify-content-center">
               <ServiceCard title="Custom software development" img="custom2.png"/>
               <ServiceCard title="E-commerce development" img="ecom.png"/>
-              <ServiceCard title="Mobile app development" img="app.png"/>
+              <ServiceCard title="ERP development" img="erp.png"/>
+              <ServiceCard title="Mobile app development" img="app2.png"/>
               <ServiceCard title="AI and Machine Learning development" img="ai.png"/>
-              <ServiceCard title="Offshore software development" img="offshore.png"/>
               <ServiceCard title="DevOps and cloud orchestration services" img="devops.png"/>
             </div>
           </div>
@@ -39,7 +39,7 @@
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Technical expertise</h3>
               <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
-                standard.
+                standard. Our developers are industry veterans with high standards of quality and professionalism.
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Personal approach</h3>
               <div>We apply a customer oriented approach, with a goal of advancing your business interest. We take care
-                to peel away assumptions, and deliver hard-hitting solutions that accurately solve your business
+                to peel away assumptions, and deliver impactful solutions that accurately solve your business
                 problem.
               </div>
             </div>

@@ -1,7 +1,7 @@
 <template>
   <main>
     <NavBar/>
-    <div class="wrapper p-4 mt-5">
+    <adiv class="wrapper p-4 mt-5">
 
       <h1 class="pt-4 pb-4">Zest</h1>
       <h2>Website building for everyone</h2>
@@ -41,7 +41,7 @@
       </div>
 
 
-    </div>
+    </adiv>
     <Footer/>
   </main>
 </template>
@@ -51,7 +51,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
 export default {
-  name: "Cruise",
+  name: "Zest",
   components: {
     NavBar,
     Footer

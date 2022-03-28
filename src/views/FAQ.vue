@@ -9,7 +9,7 @@
         <Collapse>
           <template v-slot:title>What is Async?</template>
           <template v-slot:content>
-            Async was founded in 2019 in Hanoi - Vietnam, with a mission to tap and grow
+            Async was founded in Hanoi - Vietnam, with a mission to tap and grow
             the next generation of software
             developers and deliver excellence in software products. Initially building custom software for ecommerce
             businesses in Vietnam, Async discovered the growing need, as well as the shortage and high costs, of
@@ -40,11 +40,12 @@
           <template v-slot:title>What are your payment terms?</template>
           <template v-slot:content>
             When billing for a fixed priced project, billing will be divided into milestones based on project
-            completion. Some projects may require a deposit.
+            progress.
 
             If billing by the hour, we invoice weekly. Payment is due within 3 business days.
 
-            All payments are invoiced in US dollars through Stripe, a trusted US payment processor.
+            All payments are invoiced in US dollars through Stripe, a trusted US payment processor. Some projects may
+            require a deposit.
           </template>
         </Collapse>
 
@@ -72,7 +73,7 @@
           <template v-slot:title>How much will my project cost?</template>
           <template v-slot:content>
             This can only be answered after the requirements collection process. After learning about the problem you're
-            trying to solve, your budget, users, market, ...etc.
+            trying to solve, your budget, users, market,..etc.
             we can then propose a solution that solves the problem while staying in your budget. This is
             the software consulting part of the project, and we give 2 free consulting hours per project. The result
             will be

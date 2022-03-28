@@ -7,7 +7,7 @@
     </b></div>
     <div class="w-100 pt-4 pb-4 d-flex" style="  max-width: 1200px;">
       <div class="w-50 d-flex flex-column align-items-start">
-        <div class="mb-2"><b>Async Tech</b> is a brand by Deepsel Inc.</div>
+        <div class="mb-2"><b>Async</b> is a brand by Deepsel Inc.</div>
         <div class="mb-2"><i class='bx bxs-home mr-1'></i>2261 Market Street #4441</div>
         <div class="mb-2"><i class='bx bxs-buildings mr-1'></i>San Francisco CA, 94114</div>
         <div class="mb-2"><i class='bx bxs-envelope mr-1'></i><a
@@ -36,7 +36,7 @@
     </div>
 
     <div class="w-100 text-left pb-3 pt-3" style="  max-width: 1200px; border-top: 1px solid #cccc">
-      {{ new Date().getFullYear() }} Deepsel Inc., All rights reserved
+      <small> © {{ new Date().getFullYear() }} Deepsel Inc., All rights reserved</small>
     </div>
 
   </footer>

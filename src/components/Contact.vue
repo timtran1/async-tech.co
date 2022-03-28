@@ -22,9 +22,9 @@
               <div class="d-flex flex-column align-items-start ml-2">
                 <b>Budget</b>
                 <vs-select class="mt-1" v-model="form.budget" name="budget" required>
-                  <vs-option label="$0 - $1,000" value="1k">
-                    $0 - $1,000
-                  </vs-option>
+<!--                  <vs-option label="$0 - $1,000" value="1k">-->
+<!--                    $0 - $1,000-->
+<!--                  </vs-option>-->
                   <vs-option label="$1,000 - $5,000" value="1kto5k">
                     $1,000 - $5,000
                   </vs-option>
