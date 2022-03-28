@@ -29,7 +29,11 @@ const routes = [
         name: 'Deepsel',
         component: () => import( '../views/Deepsel.vue')
     },
-
+    {
+        path: '/zest',
+        name: 'Zest',
+        component: () => import( '../views/Zest.vue')
+    },
 ]
 
 const router = new VueRouter({
