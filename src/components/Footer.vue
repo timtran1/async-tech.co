@@ -1,12 +1,12 @@
 <template>
   <footer class="d-flex justify-content-center flex-wrap pt-4 pl-2">
-    <div class="w-100 theme pb-4 pt-4 d-flex justify-content-start" style="font-size: 2rem; max-width: 1200px;"><b>
+    <div class="w-100 theme pb-4 pt-4 d-flex justify-content-start logo" style="font-size: 2rem; max-width: 1200px;"><b>
       <router-link
           to="/">Async
       </router-link>
     </b></div>
     <div class="w-100 pt-4 pb-4 d-flex" style="  max-width: 1200px;">
-      <div class="w-50 d-flex flex-column align-items-start">
+      <div class="w-50 d-flex flex-column align-items-start text-left">
         <div class="mb-2"><b>Async</b> is a brand by Deepsel Inc.</div>
         <div class="mb-2"><i class='bx bxs-home mr-1'></i>2261 Market Street #4441</div>
         <div class="mb-2"><i class='bx bxs-buildings mr-1'></i>San Francisco CA, 94114</div>
@@ -54,8 +54,6 @@ export default {
 <style scoped>
 footer {
   background-color: #E7EBF0;
-  text-align: center;
-
 }
 
 .theme {
@@ -71,4 +69,12 @@ a {
 .links a {
   font-weight: bold;
 }
+
+
+/*small screen*/
+@media (max-width: 700px) {
+.logo {
+  justify-content: center !important;
+}
+  }
 </style>

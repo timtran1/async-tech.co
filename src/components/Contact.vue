@@ -1,30 +1,31 @@
 <template>
-  <div id="contact" class="contact w-100 pt-5 pb-5" style="background-color: #2c3e50">
+  <div id="contact" class="contact pt-5 pb-5 pl-2 pr-2" style="background-color: #2c3e50">
     <h2 class="text-white">Tell us about your project</h2>
 
-    <div class="w-100 d-flex justify-content-center pb-5">
-      <vs-card>
+    <div class=" d-flex justify-content-center pb-5">
+      <vs-card class="contact-card">
         <template #text>
-          <form class="p-5" name="contact" method="POST" data-netlify="true">
+          <form class="p-4" name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact">
-            <div class="d-flex justify-content-center pb-2">
 
-              <div class="d-flex flex-column align-items-start">
+            <div class="d-flex justify-content-center pb-2 flex-wrap">
+
+              <div class="input-row d-flex flex-column align-items-start">
                 <b>Your name</b>
                 <vs-input name="name" class="mt-1" v-model="form.name" required/>
               </div>
 
-              <div class="d-flex flex-column align-items-start ml-2">
+              <div class="input-row d-flex flex-column align-items-start ml-2">
                 <b>Email</b>
                 <vs-input name="email" v-model="form.email" type="email" class="mt-1" required/>
               </div>
 
-              <div class="d-flex flex-column align-items-start ml-2">
+              <div class="input-row d-flex flex-column align-items-start ml-2">
                 <b>Budget</b>
                 <vs-select class="mt-1" v-model="form.budget" name="budget" required>
-<!--                  <vs-option label="$0 - $1,000" value="1k">-->
-<!--                    $0 - $1,000-->
-<!--                  </vs-option>-->
+                  <!--                  <vs-option label="$0 - $1,000" value="1k">-->
+                  <!--                    $0 - $1,000-->
+                  <!--                  </vs-option>-->
                   <vs-option label="$1,000 - $5,000" value="1kto5k">
                     $1,000 - $5,000
                   </vs-option>
@@ -42,11 +43,16 @@
 
 
             </div>
+
             <div class="d-flex flex-column align-items-start pb-2">
               <b>Message</b>
               <textarea
                   name="message"
-                  style="border-radius: 20px; padding:5px; background-color: rgb(244, 247, 248);    border: 2px solid transparent;color: rgb(44, 62, 80)"
+                  style="border-radius: 20px;
+                  padding:5px;
+                   background-color: rgb(244, 247, 248);
+                   border: 2px solid transparent;
+                   color: rgb(44, 62, 80)"
                   class="w-100 mt-1" rows="10"></textarea>
             </div>
 
@@ -89,5 +95,41 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 0px;
   cursor: pointer;
   max-width: none;
+}
+
+/*small screen*/
+@media (max-width: 700px) {
+  .contact-card .input-row {
+    width: 100% !important;
+  }
+
+  .contact-card input {
+    width: 100% !important;
+  }
+
+  .contact-card .vs-input {
+    width: 100% !important;
+  }
+
+    .contact-card .vs-input-parent {
+    width: 100% !important;
+  }
+
+  .contact-card .vs-input-content {
+    width: 100% !important;
+  }
+
+    .contact-card .vs-select {
+    width: 100% !important;
+  }
+
+  .contact-card .vs-select-content {
+    width: 100% !important;
+    max-width: none;
+  }
+}
+
+.contact-card {
+  max-width: 100% !important;
 }
 </style>

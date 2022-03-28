@@ -1,7 +1,7 @@
 <template>
   <vs-card type="5">
     <template #title>
-<!--      <h3>Pot with a plant</h3>-->
+      <!--      <h3>Pot with a plant</h3>-->
     </template>
     <template #img>
       <img :src="require(`@/assets/img/${$props.img}`)" :alt="img">
@@ -32,6 +32,6 @@ export default {
 }
 
 .why-us .vs-card__img img {
-width: 450px !important;
+  max-width: 450px !important;
 }
 </style>

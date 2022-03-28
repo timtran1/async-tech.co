@@ -13,27 +13,27 @@
 
 
       <h3 class="mt-5 mb-3"><b>Messaging</b></h3>
-      <div class="img-card w-100 mb-4 mt-2">
+      <div class="img-card mb-4 mt-2">
         <img class="img" :src="require(`@/assets/img/cr-msg.png`)">
       </div>
 
       <h3 class="mt-5 mb-3"><b>Requirements definition</b></h3>
-      <div class="img-card w-100 mb-4 mt-2">
+      <div class="img-card mb-4 mt-2">
         <img class="img" :src="require(`@/assets/img/cr-req.png`)">
       </div>
 
       <h3 class="mt-5 mb-3"><b>Milestones and payment</b></h3>
-      <div class="img-card w-100 mb-4 mt-2">
+      <div class="img-card mb-4 mt-2">
         <img class="img" :src="require(`@/assets/img/cr-milestone.png`)">
       </div>
 
       <h3 class="mt-5 mb-3"><b>Events tracking</b></h3>
-      <div class="img-card w-100 mb-4 mt-2">
+      <div class="img-card mb-4 mt-2">
         <img class="img" :src="require(`@/assets/img/cr-events.png`)">
       </div>
 
       <h3 class="mt-5 mb-3"><b>Login screen</b></h3>
-      <div class="img-card w-100 mb-4 mt-2">
+      <div class="img-card mb-4 mt-2">
         <img class="img" :src="require(`@/assets/img/cr-login.png`)">
       </div>
 

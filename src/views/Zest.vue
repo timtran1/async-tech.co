@@ -1,7 +1,7 @@
 <template>
   <main>
     <NavBar/>
-    <adiv class="wrapper p-4 mt-5">
+    <div class="wrapper p-4 mt-5">
 
       <h1 class="pt-4 pb-4">Zest</h1>
       <h2>Website building for everyone</h2>
@@ -41,7 +41,7 @@
       </div>
 
 
-    </adiv>
+    </div>
     <Footer/>
   </main>
 </template>

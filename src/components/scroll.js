@@ -21,12 +21,15 @@ export default {
             if (el) {
                 if (e) e.preventDefault();
                 el.scrollIntoView({behavior: 'smooth'});
+                this.hide_menu = true
             }
         },
         contact() {
             const el = document.getElementById('contact');
-            if (el) el.scrollIntoView({behavior: 'smooth'});
-            else this.$router.push('/#contact');
+            if (el) {
+                el.scrollIntoView({behavior: 'smooth'})
+                this.hide_menu = true
+            } else this.$router.push('/#contact');
         }
     }
 }

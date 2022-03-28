@@ -83,4 +83,11 @@ img {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   transform: translate(0, 5px);
 }
+
+/*small screen*/
+@media (max-width: 700px) {
+  .wrap {
+    width: 100%;
+  }
+}
 </style>

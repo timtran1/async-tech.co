@@ -3,13 +3,13 @@
 
     <NavBar/>
 
-    <img id="banner-img" src="../assets/img/banner.jpg" alt="" class="w-100">
+    <img id="banner-img" src="../assets/img/banner.jpg" alt="Async">
 
-    <div class="banner">
+    <div class="banner pl-2 pr-2">
       <!--        <h1>MAKING SOFTWARE A REALITY.</h1>-->
       <h1 class="mt-0 mb-3">Making Software A Reality</h1>
       <h2 class="mt-3">Discover possibilities with technology and uncover your future.</h2>
-      <div class="w-25 d-flex justify-content-center" style="margin: auto">
+      <div class="hire-btn d-flex justify-content-center" style="margin: auto">
         <vs-button block square size="xl" @click="contact"><b style="font-size: 24px;">Hire us!</b></vs-button>
       </div>
     </div>
@@ -17,26 +17,24 @@
     <main class="d-flex flex-column align-items-center pb-5">
       <div class="wrapper">
 
-        <div class="services">
+        <div class="services w-100">
           <h2>Our services</h2>
-          <div>
-            <div class="w-100 d-flex flex-wrap justify-content-center">
-              <ServiceCard title="Custom software development" img="custom2.png"/>
-              <ServiceCard title="E-commerce development" img="ecom.png"/>
-              <ServiceCard title="ERP development" img="erp.png"/>
-              <ServiceCard title="Mobile app development" img="app2.png"/>
-              <ServiceCard title="AI and Machine Learning development" img="ai.png"/>
-              <ServiceCard title="DevOps and cloud orchestration services" img="devops.png"/>
-            </div>
+          <div class="w-100 d-flex flex-wrap justify-content-center">
+            <ServiceCard title="Custom software development" img="custom2.png"/>
+            <ServiceCard title="E-commerce development" img="ecom.png"/>
+            <ServiceCard title="ERP development" img="erp.png"/>
+            <ServiceCard title="Mobile app development" img="app2.png"/>
+            <ServiceCard title="AI and Machine Learning development" img="ai.png"/>
+            <ServiceCard title="DevOps and cloud orchestration services" img="devops.png"/>
           </div>
         </div>
 
         <div class="why-us">
           <h2>Why us</h2>
 
-          <div class="d-flex justify-content-between mb-5">
+          <div class="d-flex justify-content-between mb-5 flex-wrap">
             <WhyUSCard img="code.jpg"/>
-            <div class="text-left p-5" style="font-size: 20px">
+            <div class="text-left p-5 why-text" style="font-size: 20px">
               <h3>Technical expertise</h3>
               <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
                 standard. Our developers are industry veterans with high standards of quality and professionalism.
@@ -44,20 +42,21 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
-            <div class="text-left p-5" style="font-size: 20px">
+          <div class="d-flex justify-content-between mt-5 pt-5 mb-5 flex-wrap flex-row-reverse">
+            <WhyUSCard img="personal.jpg"/>
+            <div class="text-left p-5 why-text" style="font-size: 20px">
               <h3>Personal approach</h3>
               <div>We apply a customer oriented approach, with a goal of advancing your business interest. We take care
                 to peel away assumptions, and deliver impactful solutions that accurately solve your business
                 problem.
               </div>
             </div>
-            <WhyUSCard img="personal.jpg"/>
+
           </div>
 
-          <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
+          <div class="d-flex justify-content-between mt-5 pt-5 mb-5 flex-wrap">
             <WhyUSCard img="relationship.jpg"/>
-            <div class="text-left p-5" style="font-size: 20px">
+            <div class="text-left p-5 why-text" style="font-size: 20px">
               <h3>Long-term relationship</h3>
               <div>We aim to build long-term working relationships with all of our clients. We believe that by doing so,
                 our mutual knowledge and understanding can compound into remarkable results.
@@ -161,15 +160,14 @@ export default {
 }
 
 .banner h1 {
-  font-size: 5rem;
-  /*margin-top: 22vh;*/
+  /*font-size: 5rem;*/
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
 .banner h2 {
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   color: white;
   font-weight: bold;
   text-align: center;
@@ -177,7 +175,7 @@ export default {
 
 .banner {
   height: 100vh;
-  padding-top: 32vh;
+  /*padding-top: 32vh;*/
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -197,6 +195,49 @@ h2 {
   transform: translate(0, 5px);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+}
+
+
+/*big screen*/
+@media (min-width: 700px) {
+  .hire-btn {
+    width: 25vw !important;
+  }
+
+  .banner {
+    padding-top: 32vh;
+  }
+
+  .banner h1 {
+    font-size: 5rem;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  .why-text {
+    width: 50% !important;
+  }
+}
+
+/*small screen*/
+@media (max-width: 700px) {
+  .banner {
+    padding-top: 17vh;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .timeline i {
+    display: none;
+  }
 }
 
 </style>

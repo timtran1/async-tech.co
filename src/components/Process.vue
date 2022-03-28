@@ -252,4 +252,17 @@ export default {
   }
 }
 
+/*small screen*/
+@media (max-width: 700px) {
+  .timeline i {
+    display: none !important;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 40px;
+    border-radius: 20px;
+  }
+}
+
 </style>
