@@ -35,7 +35,7 @@
           <h2>Why us</h2>
 
           <div class="d-flex justify-content-between mb-5">
-            <WhyUSCard img="code.jpeg"/>
+            <WhyUSCard img="code.jpg"/>
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Technical expertise</h3>
               <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
@@ -52,11 +52,11 @@
                 problem.
               </div>
             </div>
-            <WhyUSCard img="personal.jpeg"/>
+            <WhyUSCard img="personal.jpg"/>
           </div>
 
           <div class="d-flex justify-content-between mt-5 pt-5 mb-5">
-            <WhyUSCard img="relationship.jpeg"/>
+            <WhyUSCard img="relationship.jpg"/>
             <div class="text-left p-5" style="font-size: 20px">
               <h3>Long-term relationship</h3>
               <div>We aim to build long-term working relationships with all of our clients. We believe that by doing so,
@@ -70,7 +70,7 @@
           <h2>Our projects</h2>
           <div class="d-flex flex-wrap justify-content-center">
             <ProjectCard
-                img="ecom.jpeg"
+                img="ecom.jpg"
                 title="Deepsel"
                 text="E-commerce platform for growth"
                 href="/deepsel-ecommerce"
@@ -84,14 +84,14 @@
                 color="rgb(25, 91, 255)"
             />
             <ProjectCard
-                img="build.jpeg"
+                img="build.jpg"
                 title="Zest"
                 text="Build websites without coding"
                 href="/zest"
                 color="rgb(66, 184, 131)"
             />
             <ProjectCard
-                img="sharknews.jpeg"
+                img="sharknews.jpg"
                 title="SharkNews"
                 text="Data-driven news app"
                 href="/sharknews"
