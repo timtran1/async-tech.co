@@ -10,35 +10,32 @@
 
             <div class="d-flex justify-content-center pb-2 flex-wrap">
 
-              <div class="input-row d-flex flex-column align-items-start">
+              <div class="input-row d-flex flex-column align-items-start mr-2">
                 <b>Your name</b>
                 <vs-input name="name" class="mt-1" v-model="form.name" required/>
               </div>
 
-              <div class="input-row d-flex flex-column align-items-start ml-2">
+              <div class="input-row d-flex flex-column align-items-start mr-2">
                 <b>Email</b>
                 <vs-input name="email" v-model="form.email" type="email" class="mt-1" required/>
               </div>
 
-              <div class="input-row d-flex flex-column align-items-start ml-2">
+              <div class="input-row d-flex flex-column align-items-start mr-2">
                 <b>Budget</b>
-                <vs-select class="mt-1" v-model="form.budget" name="budget" required>
-                  <!--                  <vs-option label="$0 - $1,000" value="1k">-->
-                  <!--                    $0 - $1,000-->
-                  <!--                  </vs-option>-->
-                  <vs-option label="$1,000 - $5,000" value="1kto5k">
-                    $1,000 - $5,000
-                  </vs-option>
-                  <vs-option label="$5,000 - $25,000" value="5kto25k">
+                <select name="budget" class="mt-1" v-model="form.budget" required>
+                  <option value="1kto5k">
+                    $1,000 - $5,000s
+                  </option>
+                  <option value="5kto25k">
                     $5,000 - $25,000
-                  </vs-option>
-                  <vs-option label="$25,000 - $100,000" value="25kto100k">
+                  </option>
+                  <option value="25kto100k">
                     $25,000 - $100,000
-                  </vs-option>
-                  <vs-option label="$100,000+" value="100k">
+                  </option>
+                  <option value="100k">
                     $100,000+
-                  </vs-option>
-                </vs-select>
+                  </option>
+                </select>
               </div>
 
 
@@ -88,6 +85,22 @@ export default {
 }
 </script>
 
+<style scoped>
+select {
+  border: 2px solid transparent;
+  background: rgb(244, 247, 248, 1);
+  color: rgba(var(--vs-text), 1);
+  padding: 7px 13px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  padding-left: 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 12px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+</style>
+
 <style>
 #contact .vs-card {
   border: 1px solid rgb(224, 224, 224);
@@ -111,7 +124,7 @@ export default {
     width: 100% !important;
   }
 
-    .contact-card .vs-input-parent {
+  .contact-card .vs-input-parent {
     width: 100% !important;
   }
 
@@ -119,7 +132,7 @@ export default {
     width: 100% !important;
   }
 
-    .contact-card .vs-select {
+  .contact-card select {
     width: 100% !important;
   }
 
