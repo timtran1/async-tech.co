@@ -20,12 +20,12 @@
         <div class="services w-100">
           <h2>Our services</h2>
           <div class="w-100 d-flex flex-wrap justify-content-center">
-            <ServiceCard title="Custom software development" img="custom2.png"/>
+            <ServiceCard title="Startup MVP development" img="mvp.png"/>
+            <ServiceCard title="Custom software development" img="custom.png"/>
             <ServiceCard title="E-commerce development" img="ecom.png"/>
-            <ServiceCard title="ERP development" img="erp.png"/>
             <ServiceCard title="Mobile app development" img="app2.png"/>
-            <ServiceCard title="AI and Machine Learning development" img="ai.png"/>
-            <ServiceCard title="DevOps and cloud orchestration services" img="devops.png"/>
+            <ServiceCard title="ERP development" img="erp.jpg"/>
+            <ServiceCard title="DevOps and cloud orchestration" img="devops.png"/>
           </div>
         </div>
 
