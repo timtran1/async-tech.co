@@ -26,6 +26,9 @@
         <div class="ml-5 menu-item" @click="scroll" :class="{hide: hide_menu}">
           <router-link to="/#process">How we work</router-link>
         </div>
+        <div class="ml-5 menu-item" @click="scroll" :class="{hide: hide_menu}">
+          <a href="https://blog.async-tech.co">Blog</a>
+        </div>
         <div class="ml-5 menu-item" :class="{hide: hide_menu}">
           <router-link to="/faq">FAQ</router-link>
         </div>
@@ -114,7 +117,7 @@ a {
 /*small screen*/
 @media (max-width: 700px) {
   .menu-container {
-        width: 50% !important;
+    width: 50% !important;
   }
 
   .menu {
@@ -139,10 +142,10 @@ a {
     border-radius: 5px;
   }
 
-    .menu-item.cta {
-      background: none;
+  .menu-item.cta {
+    background: none;
 
-    }
+  }
 }
 
 </style>
