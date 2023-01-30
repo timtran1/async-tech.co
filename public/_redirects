@@ -1,4 +1,10 @@
 /blog/*    https://blog.async-tech.co/:splat   200
 /built/*    https://blog.async-tech.co/:splat   200
 /public/*    https://blog.async-tech.co/:splat   200
+/assets/*    https://blog.async-tech.co/:splat   200
 /ghost/*    https://blog.async-tech.co/:splat   200
+/members/*    https://blog.async-tech.co/:splat   200
+/cards.min.js    https://blog.async-tech.co/:splat   200
+/member-attribution.min.js    https://blog.async-tech.co/:splat   200
+/ghost-sdk.min.js    https://blog.async-tech.co/:splat   200
+/ghost-sdk.min.js.map    https://blog.async-tech.co/:splat   200
