@@ -1,4 +1,4 @@
-/blog/*    https://blog.async-tech.co/:splat   200
+/blog/*    https://blog.async-tech.co/blog/:splat   200
 /built/*    https://blog.async-tech.co/:splat   200
 /public/*    https://blog.async-tech.co/:splat   200
 /assets/*    https://blog.async-tech.co/:splat   200
