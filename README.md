@@ -1,6 +1,9 @@
 # async
 
 ## Project setup
+
+Deployed with Netlify to https://async-tech.cp/
+
 ```
 npm install
 ```
