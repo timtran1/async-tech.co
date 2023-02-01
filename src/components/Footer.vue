@@ -27,7 +27,7 @@
           <router-link to="/#process"><i class='bx bx-chevron-right'></i>How we work</router-link>
         </div>
                 <div class="mb-2">
-          <a href="https://blog.async-tech.co"><i class='bx bx-chevron-right'></i>Blog</a>
+          <a href="https://async-tech.co/blog"><i class='bx bx-chevron-right'></i>Blog</a>
         </div>
         <div class="mb-2"><i class='bx bx-chevron-right'></i>
           <router-link to="faq"><b>FAQ</b></router-link>

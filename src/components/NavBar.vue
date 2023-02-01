@@ -27,7 +27,7 @@
           <router-link to="/#process">How we work</router-link>
         </div>
         <div class="ml-5 menu-item" @click="scroll" :class="{hide: hide_menu}">
-          <a href="https://blog.async-tech.co">Blog</a>
+          <a href="https://async-tech.co/blog">Blog</a>
         </div>
         <div class="ml-5 menu-item" :class="{hide: hide_menu}">
           <router-link to="/faq">FAQ</router-link>
