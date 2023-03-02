@@ -72,28 +72,28 @@
                 img="ecom.jpg"
                 title="Deepsel"
                 text="E-commerce platform for growth"
-                href="/deepsel-ecommerce"
+                href="/projects/deepsel-ecommerce"
                 color="rgb(235, 47, 91)"
             />
             <ProjectCard
                 img="team-work.jpg"
                 title="Cruise"
                 text="Contract and project management made easy"
-                href="/cruise"
+                href="/projects/cruise"
                 color="rgb(25, 91, 255)"
             />
             <ProjectCard
                 img="build.jpg"
                 title="Zest"
                 text="Build websites without coding"
-                href="/zest"
+                href="/projects/zest"
                 color="rgb(66, 184, 131)"
             />
             <ProjectCard
                 img="sharknews.jpg"
                 title="SharkNews"
                 text="Data-driven news app"
-                href="/sharknews"
+                href="/projects/sharknews"
                 color="rgb(82, 96, 255)"
             />
           </div>
