@@ -68,7 +68,7 @@
             <WhyUSCard img="code.jpg"/>
             <div class="text-left p-5 why-text" style="font-size: 20px">
               <h3>Technical expertise</h3>
-              <div>We draw from one of the best tech talent pools in Asia, utilizing leading-edge technology as a
+              <div>We draw from the best tech talents, utilizing leading-edge technology as a
                 standard. Our developers are industry veterans with high standards of quality and professionalism.
               </div>
             </div>
