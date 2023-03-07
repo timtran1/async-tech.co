@@ -17,8 +17,40 @@
     <main class="d-flex flex-column align-items-center pb-5">
       <div class="wrapper">
 
+        <div class="clients">
+          <h2>Our clients</h2>
+          <div class="w-100 d-flex flex-wrap justify-content-center align-items-center pt-5 pb-5">
+            <div style="cursor: pointer">
+              <i class='bx bx-chevron-left bx-md'></i>
+            </div>
+
+            <div class="ml-5">
+              <a href="https://www.icg.ch/">
+                <img src="/icg.png" alt="" width="200">
+              </a>
+            </div>
+
+            <div class="ml-5">
+              <a href="https://nativeops.ch/">
+                <img src="/nativeops.svg" alt="" width="100">
+              </a>
+            </div>
+
+            <div class="ml-5">
+              <a href="https://www.shaw-systems.co.uk/">
+                <img src="/shawsystems.png" alt="" width="400">
+              </a>
+            </div>
+
+            <div class="ml-5" style="cursor: pointer">
+              <i class='bx bx-chevron-right bx-md'></i>
+            </div>
+
+          </div>
+        </div>
+
         <div class="services w-100">
-          <h2>Our services</h2>
+          <h2>Services</h2>
           <div class="w-100 d-flex flex-wrap justify-content-center">
             <ServiceCard title="Startup MVP development" img="mvp.png"/>
             <ServiceCard title="Custom software development" img="custom.png"/>
