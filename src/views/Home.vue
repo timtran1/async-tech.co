@@ -25,19 +25,19 @@
             </div>
 
             <div class="ml-5">
-              <a href="https://www.icg.ch/">
+              <a href="https://www.icg.ch/" target="_blank">
                 <img src="/icg.png" alt="" width="200">
               </a>
             </div>
 
             <div class="ml-5">
-              <a href="https://nativeops.ch/">
+              <a href="https://nativeops.ch/" target="_blank">
                 <img src="/nativeops.svg" alt="" width="100">
               </a>
             </div>
 
             <div class="ml-5">
-              <a href="https://www.shaw-systems.co.uk/">
+              <a href="https://www.shaw-systems.co.uk/" target="_blank">
                 <img src="/shawsystems.png" alt="" width="400">
               </a>
             </div>
