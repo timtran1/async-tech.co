@@ -19,30 +19,30 @@
 
         <div class="clients">
           <h2>Our clients</h2>
-          <div class="w-100 d-flex flex-wrap justify-content-center align-items-center pt-5 pb-5">
-            <div style="cursor: pointer">
+          <div class="client-list w-100 d-flex flex-wrap justify-content-center align-items-center pt-5 pb-5">
+            <div style="cursor: pointer" class="clients-arrows">
               <i class='bx bx-chevron-left bx-md'></i>
             </div>
 
-            <div class="ml-5">
+            <div class="client pt-3 pb-3">
               <a href="https://www.icg.ch/" target="_blank">
                 <img src="/icg.png" alt="" width="200">
               </a>
             </div>
 
-            <div class="ml-5">
+            <div class="client pt-3 pb-3">
               <a href="https://nativeops.ch/" target="_blank">
                 <img src="/nativeops.svg" alt="" width="100">
               </a>
             </div>
 
-            <div class="ml-5">
+            <div class="client pt-3 pb-3">
               <a href="https://www.shaw-systems.co.uk/" target="_blank">
-                <img src="/shawsystems.png" alt="" width="400">
+                <img src="/shawsystems.png" alt="" width="350">
               </a>
             </div>
 
-            <div class="ml-5" style="cursor: pointer">
+            <div class="ml-5 clients-arrows" style="cursor: pointer">
               <i class='bx bx-chevron-right bx-md'></i>
             </div>
 
@@ -176,6 +176,25 @@ export default {
 </script>
 
 <style scoped>
+
+.client {
+  margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .clients-arrows {
+    display: none;
+  }
+
+  .client {
+    margin-left: 0;
+  }
+
+  .client-list {
+    flex-direction: column;
+  }
+}
+
 
 #banner-img {
   width: 100vw;
