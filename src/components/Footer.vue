@@ -11,7 +11,7 @@
         <div class="mb-2"><i class='bx bxs-home mr-1'></i>2261 Market Street #4441</div>
         <div class="mb-2"><i class='bx bxs-buildings mr-1'></i>San Francisco CA, 94114</div>
         <div class="mb-2"><i class='bx bxs-envelope mr-1'></i><a
-            href="mailto:contact@async-tech.com">contact@async-tech.com</a>
+            href="mailto:contact@async-tech.co">contact@async-tech.co</a>
         </div>
         <div class="mb-2"><i class='bx bxs-phone mr-1'></i>+1 (415) 655 1009</div>
       </div>
